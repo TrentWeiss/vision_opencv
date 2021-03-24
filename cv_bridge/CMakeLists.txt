@@ -14,7 +14,7 @@ endif()
 
 if(NOT ANDROID)
   find_package (Python3 REQUIRED COMPONENTS Development.Module NumPy)
-  find_package(Boost REQUIRED COMPONENTS python numpy)
+  find_package(Boost REQUIRED COMPONENTS python3${Python3_VERSION_MINOR} numpy3${Python3_VERSION_MINOR})
 else()
   find_package(Boost REQUIRED)
 endif()

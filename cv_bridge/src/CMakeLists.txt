@@ -35,8 +35,8 @@ else()
   add_library(${PROJECT_NAME}_boost module.cpp module_opencv3.cpp)
 endif()
 target_link_libraries(${PROJECT_NAME}_boost
-  Boost::numpy
-  Boost::python
+  Boost::numpy38
+  Boost::python38
   Python3::Module
   Python3::NumPy
   ${PROJECT_NAME}
